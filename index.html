@@ -30,25 +30,34 @@
                 <a href="mailto:info@devstudio.com" class="link head">
                     <svg class="icon-mail">
                         <use href="./img/icons.svg#icon-mail"></use>
-                    </svg> 
+                    </svg>
                     info@devstudio.com
                 </a>
                 <a href="tel:+380961111111" class="link head">
                     <svg class="icon-phone">
                         <use href="./img/icons.svg#icon-phone"></use>
-                    </svg> 
+                    </svg>
                     +38 096 111 11 11
                 </a>
             </div>
         </div>
     </header>
 
+    <div class="backdrop is-hiden" data-modal>
+        <div class="modal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quia tempore nihil, earum debitis
+                voluptate, enim odit voluptatem omnis sit fugit neque, aut magnam perferendis pariatur doloremque itaque
+                deleniti quis!</p>
+            <button data-modal-close>X</button>
+        </div>
+    </div>
+
     <main>
         <!--Герой-->
         <section class="section hero img-overlay">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="button btn-hero">Замовити послугу</button>
+                <button data-modal-open type="button" class="button btn-hero">Замовити послугу</button>
             </div>
         </section>
 
@@ -112,15 +121,31 @@
                 <h2 class="show">Чим ми займаємося</h2>
                 <ul class="show-list">
                     <li class="pic">
-                        <img class="img" src="./img/laptop.jpg" alt="work" width="370">
+                        <div class="show-box">
+                            <img class="img" src="./img/laptop.jpg" alt="work" width="370">
+                            <div class="show-overlay">
+                                <p>Десктопні додатки</p>
+                            </div>
+                        </div>
                     </li>
 
                     <li class="pic">
-                        <img class="img" src="./img/phone.jpg" alt="work" width="370">
+                        <div class="show-box">
+                            <img class="img" src="./img/phone.jpg" alt="work" width="370">
+                            <div class="show-overlay">
+                                <p>Мобільні додатки</p>
+                            </div>
+                        </div>
                     </li>
 
                     <li class="pic">
-                        <img class="img" src="./img/tablet.jpg" alt="work" width="370">
+                        <div class="show-box">
+                            <img class="img" src="./img/tablet.jpg" alt="work" width="370">
+                            <div class="show-overlay">
+                                <p>Дизайнерські рішення</p>
+                            </div>
+                        </div>
+
                     </li>
                 </ul>
             </div>
@@ -201,7 +226,7 @@
                                         </svg>
                                     </a>
                                 </li>
-                                
+
                                 <li class="social-media">
                                     <a href="" class="social-link" aria-label="Linkedin">
                                         <svg class="media" width="20" height="20">
@@ -242,7 +267,7 @@
                                         </svg>
                                     </a>
                                 </li>
-                                
+
                                 <li class="social-media">
                                     <a href="" class="social-link" aria-label="Linkedin">
                                         <svg class="media" width="20" height="20">
@@ -283,7 +308,7 @@
                                         </svg>
                                     </a>
                                 </li>
-                                
+
                                 <li class="social-media">
                                     <a href="" class="social-link" aria-label="Linkedin">
                                         <svg class="media" width="20" height="20">
@@ -308,7 +333,7 @@
                             <svg class="company" width="41" height="47">
                                 <use href="./img/icons.svg#group-first"></use>
                             </svg>
-                        </a>    
+                        </a>
                     </li>
                     <li class="client">
                         <a href="" class="client-company">
@@ -409,5 +434,6 @@
 
     </footer>
 
+    <script src="./js/modal.js"></script>
 </body>
 </html>
